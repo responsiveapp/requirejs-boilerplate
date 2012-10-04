@@ -1,3 +1,6 @@
+//Wrapped in an outer function to preserve global this
+(function (root) { var amdExports; define(['jquery','underscore'], function () { (function () {
+
 //     Backbone.js 0.9.2
 
 //     (c) 2010-2012 Jeremy Ashkenas, DocumentCloud Inc.
@@ -260,7 +263,7 @@
     set: function(key, value, options) {
       var attrs, attr, val;
 
-      // Handle both `"key", value` and `{key: value}` -style arguments.
+      // Handle both
       if (_.isObject(key) || key == null) {
         attrs = key;
         options = value;
@@ -1429,3 +1432,10 @@
   };
 
 }).call(this);
+
+
+amdExports = Backbone;
+
+}.call(root));
+    return amdExports;
+}); }(this));

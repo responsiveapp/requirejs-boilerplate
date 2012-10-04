@@ -9,7 +9,7 @@
 	modules: [
 	 	{
 	 		name: "app",
- 			excludeShallow: ["coffee-script"], // can't just "exclude" as it also excludes jquery!?
+ 			exclude: ["coffee-script"], // can't just "exclude" as it also excludes jquery!?
 	 	},
 	],
 
