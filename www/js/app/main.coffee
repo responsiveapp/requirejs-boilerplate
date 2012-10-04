@@ -1,4 +1,5 @@
-define ['backbone', 'cs!./nav/nav'], (BB, Nav) ->
+define ['backbone', 'cs!app/nav/nav'], (BB, Nav) ->
+	
 	start: ()->
 		nav = new Nav({
 			el : $ ".container"

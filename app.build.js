@@ -2,12 +2,13 @@
 ({
 	appDir: "www",
     dir: "www-built",
-	mainConfigFile: 'www/js/main.js',
+	mainConfigFile: 'www/js/app.js',
 
 	stubModules: ['cs', 'text', 'tpl'], // we don't need this in optimized, all is compiled/inlined
+
 	modules: [
 	 	{
-	 		name: "../main",
+	 		name: "app",
  			excludeShallow: ["coffee-script"], // can't just "exclude" as it also excludes jquery!?
 	 	},
 	],
